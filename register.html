@@ -28,16 +28,21 @@
             </div>
         </div>
         <div class="content vw-100 ">
-            <div class="row vw-100 ">
-                <div class="logo-slogan col-6 ">
-                    <h1>FPT-SECRET</h1>
-                    <p class="slogan">Nơi trao đổi, chia sẻ thông tin, câu chuyện,v.v. của sinh viên đại học FPT</p>
-                </div>
-
-                <div class="container w-25 col-6 rounded-2">
+                <div class=" register-form container  rounded-2">
 
                     <form class="p-3" id="register-form">
                         <h1 class="sign-in-header text-center"> Register</h1>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"> <i class="ti-user"></i> Name User</label>
+                            <input type="text" class="form-control" id="user-name" aria-describedby="emailHelp"
+                                placeholder="Enter Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"> <i class="ti-id-badge"></i> Student ID number
+                            </label>
+                            <input type="text" class="form-control" id="id-number" aria-describedby="emailHelp"
+                                placeholder="Enter ID number" required>
+                        </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label"> <i class="ti-email"></i> Email
                                 address</label>
@@ -51,6 +56,12 @@
                             <input type="password" class="form-control" id="password" minlength="8" required
                                 placeholder="Enter password">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> <i class="ti-lock"></i>
+                            Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" minlength="8" required
+                                placeholder="Enter password">
+                        </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -58,10 +69,11 @@
                         <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>
+                <div>
+                    <p class="text-center mb-0 p-5">Copyright © 2024 Team 3 CTV JS . All Rights Reserved.</p>
+                </div>
             </div>
-            <div>
-                <p class="text-center mb-0 p-3">Copyright © 2024 Team 3 CTV JS . All Rights Reserved.</p>
-            </div>
+
         </div>
     </div>
     <script>
@@ -69,8 +81,12 @@
             event.preventDefault();
             var emailValue = document.getElementById("email").value;
             var passwordValue = document.getElementById("password").value;
+            var confirmPasswordValue = document.getElementById("confirm-password").value;
             console.log("Email:", emailValue);
             console.log("Password:", passwordValue);
+         if (passwordValue !== confirmPasswordValue) {
+        alert("Passwords do not match");
+        return;}
         });
 
     </script>

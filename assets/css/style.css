@@ -4,86 +4,117 @@
     box-sizing: border-box;
 
 }
+
 html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
-    
+
 }
+
 .clear {
     clear: both;
 }
-.header{
+
+.header {
     font-size: 20px;
-    background-image:url(../img/backroundend.png) ;
+    background-image: url(../img/backroundend.png);
     min-height: 100px;
     box-shadow: 0 0 50px rgba(64, 0, 255, 0.3);
-    
+
 }
+
+.header a {
+    text-decoration: none;
+}
+
 .main .socail-list {
     float: right;
     line-height: 100px;
-    padding: 0 30px;
-
-
+    padding: 0 50px;
 }
+
+.main .socail-list a {
+    margin: 5px;
+    color: white;
+    padding: 8px;
+    border-radius: 42%;
+    text-decoration: none;
+    width: 50px;
+    background-color: black;
+}
+
 .logo-load {
     line-height: 100px;
     padding: 0 30px;
     display: inline-block;
+    color: #fff;
 }
+
 .content {
     background-image: url(../img/gold-shiny-background-with-variating-hues.jpg);
     background-color: rgba(orange, 0.1);
     background-size: cover;
     min-height: 100vh;
-    
+    display: inline-block;
+
 }
+
 .logo-slogan {
-    
+
     padding: 200px 24px 24px 50px;
+
 }
+
 .slogan {
     font-weight: 700;
     font-size: 20px;
-    font-family:monospace
+    font-family: monospace
 }
-.container   {
+
+
+
+.container {
     margin-top: 50px;
     background-color: white;
-    
-    
 }
-.w-25{
-    width: 35%!important;
+
+.register-form {
+    width: 45%;
+
+    align-items: center;
+    justify-content: center;
 }
-.btn{
+
+.w-25 {
+    width: 35% !important;
+}
+
+.btn {
     width: 100%;
-    transition-duration: 0.4s; 
+    transition-duration: 0.4s;
     background-color: rgb(255, 128, 0);
     color: rgb(252, 252, 252);
     font-weight: 600;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #ff3c00;
     color: #fff;
     font-weight: 600;
 }
+
 .register {
     padding-top: 10px;
 }
+
 .register-btn {
     background-color: rgb(72, 149, 241);
 }
+
 .register-btn:hover {
     background-color: rgb(36, 36, 176);
 }
-.footer {
-    
-}
-.row {
 
-}
+.footer {}
 
-
-
-
+.row {}
